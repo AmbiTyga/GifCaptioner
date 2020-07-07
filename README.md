@@ -1,10 +1,10 @@
-# GCNet (GIF Caption Network) | Neural Network Generated GIF Captions
+# GifCaptioner
 
-## The goal of GCNet is to produce high quality GIF captions.
+## The goal of this project is to produce accurate captions for gifs using deep learning methods.
 
-Below are GIFs from the [TGIF] dataset, and GCNet's generated captions for them. GCNet was not trained with these GIFs!
+Below are GIFs from the [TGIF] dataset, and trained model's generated captions for them.
 
-| GIF from [TGIF] Dataset | GCNet Generated GIF Caption |
+| GIF from [TGIF] Dataset | GifCaptioner Generated GIF Caption |
 |---|---|
 | <img src="./imgs/TGIF/101108.gif" alt="TGIF" width="240">  | a monkey with an animal is eating something |
 | <img src="./imgs/TGIF/101109.gif" alt="TGIF" width="240">  | a man is holding a microphone and moving his hands |
@@ -15,7 +15,7 @@ Below are GIFs from the [TGIF] dataset, and GCNet's generated captions for them.
 | <img src="./imgs/TGIF/101286.gif" alt="TGIF" height="240"> | a young woman in a car is driving and smiles |
 
 # Architecture
-
+In this section we will dicuss about our model's architecture amd the use of pretrained network. We have named this model GCNet.
 ## Input
 
 1. GIF frames' precomputed VGG16 output ([TODO: Create Standalone GCNet that doesn't require precomputation](#standalone-gcnet))
@@ -53,7 +53,7 @@ From start to finish, this will take at least 6 hours if you have a gigabit inte
 ## 0. Requirements
 
 - [Keras]
-- [Theano] / [TensorFlow] (as [Keras Backend])
+- [TensorFlow] (as [Keras Backend])
 - GPU (optional, but HIGHLY recommended)
 - python 2.7 (recommended [Anaconda])
 - [node.js] 6.9.1
@@ -179,7 +179,6 @@ This is a work in progress. If you notice something is wrong, please let me know
    [Anaconda]: <https://www.continuum.io/downloads>
    [Keras]: <https://keras.io/>
    [Keras Backend]: <https://keras.io/backend/>
-   [Theano]: <http://deeplearning.net/software/theano/>
    [TensorFlow]: <https://www.tensorflow.org/>
    [node.js]: <https://nodejs.org/en/>
    [Kaggle]: <https://www.kaggle.com/raingo/tumblr-gif-description-dataset>
